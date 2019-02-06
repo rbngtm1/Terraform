@@ -14,21 +14,21 @@ https://www.terraform.io/downloads.html and copy link of 64 and paste it to ec2-
 7. mkdir terraform-lab and go inside it
 8. vi ec2.tf   (tf is extention for terraform)
 * 
-    provider "aws" {
-      access_key = "***"
-      secret_key = "***"
-      region     = "us-east-1"
-    }
+       provider "aws" {
+         access_key = "***"
+         secret_key = "***"
+         region     = "us-east-1"
+       }
 
-    resource "aws_instance" "example" {
-      ami           = "ami-2757f631"
-      instance_type = "t2.micro"
+       resource "aws_instance" "example" {
+         ami           = "ami-2757f631"
+         instance_type = "t2.micro"
 
 
-      tags {
-        Name = "test-instance"
-      }
-    }
+         tags {
+           Name = "test-instance"
+         }
+       }
 
 
 
