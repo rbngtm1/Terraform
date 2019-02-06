@@ -13,7 +13,7 @@ https://www.terraform.io/downloads.html and copy link of 64 and paste it to ec2-
 6. type terraform , you will see information 
 7. mkdir terraform-lab and go inside it
 8. vi ec2.tf   (tf is extention for terraform)
-9. 
+* 
     provider "aws" {
       access_key = "***"
       secret_key = "***"
