@@ -39,5 +39,5 @@ https://www.terraform.io/downloads.html and copy link of 64 and paste it to ec2-
 14. initialize the terraform by command -- terraform init
 13. terraform apply ---- and write yes
 15. note: the user should have ec2fullaccess.
-16. you can see the changes made by going to ec2-instances
+16. you can see the changes made by going to ec2-instances, just above ami you need to add count = 2 if you want 2 more machines or so.
 17. you can even destroy the changes using command -- terraform destroy
