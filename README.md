@@ -21,6 +21,7 @@ https://www.terraform.io/downloads.html and copy link of 64 and paste it to ec2-
        }
 
        resource "aws_instance" "example" {
+         count         = 2
          ami           = "ami-2757f631"
          instance_type = "t2.micro"
 
